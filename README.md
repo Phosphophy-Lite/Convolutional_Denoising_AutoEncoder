@@ -10,7 +10,7 @@ pipeline:
    (gaussian, poisson, salt & pepper) into the images.
 2. Two model architectures:
    - A configurable plain Convolutional Autoencoder (CDAE).
-   - A "U-Net" style autoencoder : mirror of the previous architecture but with skip connections.
+   - A "U-Net" style autoencoder : mirror of the previous architecture but with skip connections. (*! Not the canonical U-Net architecture as there are no double convolutional layers !*)
 3. Training either model in "specialist" mode (one fixed noise type/level on the training images)
    or "generalist" mode (trained across multiple noise types/levels).
 4. Evaluating the trained model against classical denoising filters

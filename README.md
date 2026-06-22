@@ -107,3 +107,6 @@ pip install -r requirements.txt
 3. Re-run earlier cells with different parameters (noise type/level,
    model depth, loss function, hyperparameters, etc.) to experiment with different
    configurations.
+
+## Models
+The `models` folder contains trained models for both architectures presented in the notebook (skip connected DAE and non-skip connected DAE, U-Net inspired although there were no double convolutional layers used like the canonical U-Net). Models were trained and tested at depth- and depth-4, typically on Gaussian noise at `level=0.1` (also conventionally noted `sigma=25` in [0,255] range) (fixed mode), or on random noises (generalist mode). Most models were trained using MS-SSIM as the loss function, but for the standard depth-3 DAE, multiple loss functions were tested (L1, MSE, MS-SSIM, SSIM, MS-SSIM+L1).

@@ -20,7 +20,13 @@ pipeline:
 The notebook is self-contained: run the cells from top to bottom, choosing
 the options described in each section's markdown cell as you go.
 
-The notebook can be important in a Google Colab.
+The notebook can be imported in a Google Colab.
+
+<p align="center">
+  <img src="./results_example.png" alt="Example results" width="700">
+  <br>
+  <em>Example results of a trained CDAE model with skip connections on Gaussian noise, using the notebook's pipeline</em>
+</p>
 
 ## Main library requirements
 
